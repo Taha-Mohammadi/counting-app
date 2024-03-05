@@ -1,0 +1,83 @@
+/* Default styles */
+body {
+  background-image: url("th (2).jpeg");
+  background-size: cover;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  color: rgb(242, 240, 250);
+  min-height: 100vh; /* Changed from height to min-height for responsiveness */
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-shadow: 10px 10px 10px rgb(0, 0, 0);
+}
+
+h2 {
+  font-size: 50px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-shadow: 10px 10px 10px rgb(0, 0, 0);
+}
+
+button {
+  border: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+  font-weight: bold;
+  width: 200px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  box-shadow: 15px 10px 10px rgb(0, 0, 0);
+}
+
+#save-btn,
+#zero-btn {
+  background: darkred;
+}
+
+#decrement-btn,
+#increment-btn {
+  background: darkgreen;
+}
+
+.zero {
+  background: darkred;
+  margin-bottom: 5px;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.horizontal-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.horizontal-buttons button {
+  margin: 0 5px;
+}
+
+#zero-btn {
+  margin-top: 10px;
+}
+
+/* Media Queries for responsiveness */
+@media only screen and (max-width: 768px) {
+  h2 {
+    font-size: 40px; /* Adjust font size for smaller screens */
+  }
+  
+  button {
+    width: 150px; /* Adjust button width for smaller screens */
+  }
+}
